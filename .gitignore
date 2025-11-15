@@ -1,0 +1,18 @@
+# Ignore everything except backend and project files
+.*
+
+# Allow these:
+!.gitignore
+!backend/
+!railway.toml
+!requirements.txt
+
+# Node stuff
+node_modules/
+
+# Python cache
+__pycache__/
+
+# Windows junk
+Thumbs.db
+desktop.ini
