@@ -9,10 +9,12 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 WORKDIR /app
 
-# Copy only backend resources
+# Copy requirements
 COPY backend/requirements.txt ./requirements.txt
+
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Copy backend app folder
 COPY backend/app ./app
 
 ENV PORT=8000
